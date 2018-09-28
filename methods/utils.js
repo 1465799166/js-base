@@ -28,9 +28,9 @@ function zoomImg(obj) {
 }
 
 // 解决JQuery多次点击执行多次的问题
-$('#btn').unbind('click');
+$('#btn').off('click');
 
-$('#btn').bind('click', function () {
+$('#btn').on('click', function () {
 
     alert('仅提示一次！');
 
